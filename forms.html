@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Log in form</title>
+</head>
+<body>
+	<h1>Login</h1>
+	<!-- action: where form send data to -->
+	<!-- method: what HTTP method  (get/post) -->
+	<!-- label, accessibility -->
+	<form action="http://www.wikipedia.org" method="GET">
+		<!-- two ways for label -->
+		<!-- required: presence validation (non-empty), type validation (email format) -->
+		<label>
+			Email:
+			<input type="email" placeholder="email" name="email" required>
+		</label>
+
+		<label for="password">password:</label>
+		<input id="password" type="password" placeholder="password" name="password" required>
+		<p>cat/dog?:</p>
+		<label for="dog">dog:</label>
+		<input id="dog" type="radio" name="petChoice" value="DOG">
+		<label for="cat">cat:</label>
+		<input id="cat" type="radio" name="petChoice" value="CAT">
+
+		<p>favourite color:</p>
+		<select name="favColor">
+			<option value="red">blood</option>
+			<option value="blue">sky</option>
+		</select>
+
+		<div>
+			<textarea rows="10" cols="50" name="favQuote"></textarea>
+		</div>
+		<input type="checkbox" name="">
+
+		<label><input type="submit" name=""></label>
+	</form>
+</body>
+</html>
